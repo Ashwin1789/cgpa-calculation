@@ -1,0 +1,40 @@
+
+#logo1
+{
+    float:left;
+    width: 12%;
+}
+#head
+{
+    float: left;
+}
+#logo2
+{
+    float:left;
+    width: 12%;
+}
+#dep
+{
+    margin-left: 50px;
+}
+#sgpahead
+{
+    margin-left: 180px;
+}
+#ins
+{
+    color:red;
+}
+tr{
+    background-color: rgb(245, 141, 6);
+}
+th{
+    background-color: rgb(82, 82, 240);
+    padding: 15px;
+}
+button{
+    height:50px;
+    width:100px;
+    background-color: rgb(82, 82, 240);
+    
+}

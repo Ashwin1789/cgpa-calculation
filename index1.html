@@ -1,0 +1,488 @@
+<html>
+    <head>
+        <title>SGPA CALCULATION</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./bootstrap-5.1.0-dist/css/bootstrap.min.css">
+
+    </head>
+
+
+
+
+    <body class="container">
+        <script src="script.js"></script>
+        <script src="./bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+        <script src="./bootstrap-5.1.0-dist/js/jquery.min.js"></script>
+
+
+    <div class="container">   
+        <img src="logo.png" alt="not supported" id="logo1">
+        <div id="head">
+        <h1>K.S.Rangasamy College Of Technology</h1>
+        <h2 id="dep">Department Of Information Technology</h2>
+        <h3 id="sgpahead">SGPA CALCULATION</h3>
+        </div>  
+        <img src="logo1.png" alt="not supported" id="logo2">
+    </div>
+         <br><br>
+        
+        
+        <!--<img src="IT.jpg" alt="not supported">-->
+        <br><br><br><br><br><br><br>
+        <h4 id="ins">NOTE : **Must Enter the Grades in Capital Letter</h4>
+    <div class="container">
+        <div>
+        <br><br><br>
+        <h2>SEMESTER 1 </h2>
+        <table >
+            <tr>
+                <th>SUBJECT CODE</th>
+               <th>SUBJECTS</th>
+               <th>ENTER YOUR GRADES</th>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 EN 001</td>
+                <td>COMMUNICATION SKILLS 1 : </td>
+                <td><input id="cs1" type="text" placeholder="Enter the grade"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 MA 001</td>
+                <td>CALCULUS AND DIFFERENTIAL EQUATION : </td>
+                <td><input id="cde" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 CH 001</td>
+                <td>APPLIED CHEMISTRY : </td>
+                <td><input id="ac" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 ME 003</td>
+                <td>ENGINEERING MECHANICS : </td>
+                <td><input id="em" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 CS 001</td>
+                <td>PROGRAMMING FOR PROBLEM SOLVING : </td>
+                <td><input id="pps" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 CH 0P1</td>
+                <td>CHEMISTRY LABORATORY : </td> 
+                <td> <input id="cl" type="text" placeholder="Enter the grade"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 CS 0P1</td>
+                <td>PROGRAMMING FOR PROBLEM SOLVING LABORATORY : </td>
+                <td><input id="ppsl" type="text" placeholder="Enter the grade"></td>
+            </tr>
+        </table>
+        <br><br>
+    <div>
+        <button onclick="submit1()">GET SGPA</button>
+    </div>
+    <br><br>
+    <h3 id="output1"></h3>
+    <br><br><br>
+    <h3 id="output1_1"></h3>
+    <br><br><br>
+    </div>
+
+
+
+
+<!--SEMESTER - 2 -->
+
+
+
+    <div class="container" id="sem2">
+    <h2>SEMESTER 2 </h2>
+        <table >
+            <tr>
+                <th>SUBJECT CODE</th>
+               <th>SUBJECTS</th>
+               <th>ENTER YOUR GRADES</th>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 EN 002</td>
+                <td>COMMUNICATION SKILLS 2 : </td>
+                <td><input id="cs2" type="text" placeholder="Enter the grade"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 MA 001</td>
+                <td>LAPLACE TRANSFORM AND COMPLEX VARIABLES : </td>
+                <td><input id="ltcv" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 PH 003</td>
+                <td>SEMICONDUCTOR OPTOELECTRONICS : </td>
+                <td><input id="so" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 EE 001</td>
+                <td>BASIC ELECTICAL ENGINEERING : </td>
+                <td><input id="bee" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 ME 002</td>
+                <td>ENGINEERING GRAPHICS : </td>
+                <td><input id="eg" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 PH 0P2</td>
+                <td>APPLIED PHYSICS LABORATORY : </td>
+                <td><input id="apl" type="text" placeholder="Enter the grade"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 ME 0P1</td>
+                <td>ENGINEERING PRACITCES LABORATORY : </td>
+                <td><input id="epl" type="text" placeholder="Enter the grade"></td>
+            </tr>
+        </table>
+    
+    <br><br>
+    <div>
+        <button onclick="submit2()">GET SGPA</button>
+    </div>
+    <br><br>
+    <h3 id="output2"></h3>
+  </div>
+  <br><br><br>
+  <h3 id="output2_2"></h3>
+</div>
+<br><br><br>    
+
+
+<!--Semester  3 -->
+
+  <div class="container" id="sem2">
+    <h2>SEMESTER 3 </h2>
+        <table >
+            <tr>
+                <th>SUBJECT CODE</th>
+               <th>SUBJECTS</th>
+               <th>ENTER YOUR GRADES</th>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 MA 003</td>
+                <td>PROBABILITY AND STATISTICS : </td>
+                <td><input id="pands" type="text" placeholder="Enter the grade"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 CS 002</td>
+                <td>DATA STRUCTURES : </td>
+                <td><input id="ds" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 CS 003</td>
+                <td>OBJECT ORIENTED PROGRAMMING : </td>
+                <td><input id="oops" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 EC 002</td>
+                <td>DIGITAL LOGIC CIRCUITS : </td>
+                <td><input id="dlc" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT 301</td>
+                <td>SOFTWARE ENGINEERING : </td>
+                <td><input id="se" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 CS 0P2</td>
+                <td>DATA STRUCTURES LABORATORY : </td>
+                <td><input id="dsl" type="text" placeholder="Enter the grade"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 CS 0P3</td>
+                <td>OBJECT ORIENTED PROGRAMMING LABORATORY : </td>
+                <td><input id="oopsl" type="text" placeholder="Enter the grade"></td>
+            </tr>
+        </table>
+    
+    <br><br>
+    <div>
+        <button onclick="submit3()">GET SGPA</button>
+    </div>
+    <br><br>
+    <h3 id="output3"></h3>
+  </div>
+  <br><br><br>
+</div>
+<h3 id="output3_3"></h3>
+<br><br><br>
+
+<!--Semester  4 -->
+
+<div class="container" id="sem2">
+    <h2>SEMESTER 4 </h2>
+        <table >
+            <tr>
+                <th>SUBJECT CODE</th>
+               <th>SUBJECTS</th>
+               <th>ENTER YOUR GRADES</th>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 MA 011</td>
+                <td>DISCRETE MATHEMATICS : </td>
+                <td><input id="dm" type="text" placeholder="Enter the grade"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT 001</td>
+                <td>DESIGN AND ANALYSIS OF ALGORITHMS : </td>
+                <td><input id="daa" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT 401</td>
+                <td>JAVA PROGRAMMING : </td>
+                <td><input id="jp" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT 402</td>
+                <td>COMPUTER ORAGANIZATION AND ARCHITECTURE : </td>
+                <td><input id="coa" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT 403</td>
+                <td>OPERATING SYSTEM : </td>
+                <td><input id="os" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT L**</td>
+                <td>OPEN ELECTIVE - 1 : </td>
+                <td><input id="oeo" type="text" placeholder="Enter the grade"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT 4P1</td>
+                <td>JAVA PROGRAMMING LABORATORY : </td>
+                <td><input id="jpl" type="text" placeholder="Enter the grade"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT 4P2</td>
+                <td>OPETATING SYSTEMS AND OPEN SOURCE LABORATORY : </td>
+                <td><input id="osl" type="text" placeholder="Enter the grade"></td>
+            </tr>
+        </table>
+    
+    <br><br>
+    <div>
+        <button onclick="submit4()">GET SGPA</button>
+    </div>
+    <br><br>
+    <h3 id="output4"></h3>
+  </div>
+  <br><br><br>
+  <h3 id="output4_4"></h3>
+</div>
+<br><br><br>
+
+
+
+<!--Semester  5 -->
+
+<div class="container" id="sem2">
+    <h2>SEMESTER 5 </h2>
+        <table >
+            <tr>
+                <th>SUBJECT CODE</th>
+               <th>SUBJECTS</th>
+               <th>ENTER YOUR GRADES</th>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT 501 </td>
+                <td>COMPUTER NETWORKS : </td>
+                <td><input id="cn" type="text" placeholder="Enter the grade"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT 502 </td>
+                <td>DATABASE MANAGEMENT SYSTEM : </td>
+                <td><input id="dbms" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT 503</td>
+                <td>PROGRAMMIN USING PYTHON : </td>
+                <td><input id="pp" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT E1*</td>
+                <td>ELECTIVE 1 : </td>
+                <td><input id="e" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT L**</td>
+                <td>OPEN ELECTIVE 2 : </td>
+                <td><input id="oet" type="text" placeholder="Enter the grade"> </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT 5P1 </td>
+                <td>NETWORKING LABORATORY : </td>
+                <td><input id="nl" type="text" placeholder="Enter the grade"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>50 IT 5P2</td>
+                <td>DATABASE MANAGEMENT SYSTEM LABORATORY : </td>
+                <td><input id="dbmsl" type="text" placeholder="Enter the grade"></td>
+            </tr>
+        </table>
+    
+    <br><br>
+    <div>
+        <button onclick="submit5()">GET SGPA</button>
+    </div>
+    <br><br>
+    <h3 id="output5"></h3>
+  </div>
+  <br><br><br>
+  <h3 id="output5_5"></h3>
+</div>
+<br><br><br>
+
+<button onclick="fun()">click</button>
+<p id="final"></p>
+
+</body>
+</html>
